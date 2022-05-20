@@ -1,0 +1,545 @@
+/* Kodet av Liv, Thea og Nora */
+/*Layout for alle bakgrunnsbildene*/
+Body{
+    margin: 0;
+}
+.topSection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middleSection {
+    position: relative;
+}
+.bottomSection {
+    position: relative;
+}
+.botttomBottomSection {
+    position: relative;
+}
+.backgroundPic1{
+    width: 100%;
+    display: block;
+}
+.backgroundPic2{
+    width: 100%;
+    display: block;
+}
+.backgroundPic3{
+    width: 100%;
+    display: block;
+}
+.backgroundPic4{
+    width: 100%;
+    display: block; 
+}
+/*Astronauten sin plassering og størrelse 
+samt hvordan animasjonen skal kjøre */
+.gifsize{
+    position: absolute;
+    width: 10%;
+    z-index: 9999;
+    right: 15%;
+    top: 10%;
+}
+.gifsize{
+    animation-name: astronaut;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+/*Astronauten sin animasjon
+den skal bevege seg rundt på skjermen*/
+@keyframes astronaut{
+    0%{
+        right: 0;
+    }
+    20%{
+        right: 20%;
+        top: 15%;
+    }
+    40%{
+        right: 90%;
+        top: 15%;
+    }
+    59%{
+        transform: scaleX(180deg);
+    }
+    60%{
+        right: 80%;
+        top: 40%;
+    }
+    80%{
+        right: 10%;
+        top: 10%;
+    }
+    100%{
+        right: 0;
+        transform: rotateY(180deg);
+    }
+}
+/*Romvesenet sin størrelse og plassering
+og hvordan animasjonen skal kjøre*/
+.gif1{
+    position: absolute;
+    width: 10%;
+    z-index: 9999;
+    left: 20%;
+    top: 10%;
+}
+.gif1{
+    animation-name: romvesen;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+/*Romvesenet sin animasjon
+den skal bevege seg rundt på skjermen*/
+@keyframes romvesen{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 20%;
+        top: 15%;
+    }
+    40%{
+        left: 90%;
+        top: 15%;
+    }
+    59%{
+        transform: scaleX(180deg);
+    }
+    60%{
+        left: 80%;
+        top: 40%;
+    }
+    80%{
+        left: 10%;
+        top: 10%;
+    }
+    100%{
+        left: 0;
+        transform: rotateY(180deg);
+    }
+}
+/* Logoen fungerer som en link til ny side og har en hover effekt der logoen
+blir større */
+.link{
+    position: absolute;
+    display: block;
+}
+.logoStyle{
+    z-index: 9999;
+    transition: transform .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.logoStyle:hover{
+    transform: scale(1.1);
+}
+/* Superman sin plassering og animasjon */
+.supermanPic {
+    z-index: 9999999;
+    display: flex;
+    position: absolute;
+    width: 10%;
+    right: 15%;
+    top: 10%;
+}
+.supermanPic{
+    animation-name: flyingSuperman;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes flyingSuperman {
+    0%{
+        right: 0;
+    }
+    20%{
+        right: 20%;
+        top: 15%;
+    }
+    40%{
+        right: 90%;
+        top: 15%;
+    }
+    59%{
+        transform: scaleX(180deg);
+    }
+    60%{
+        right: 80%;
+        top: 40%;
+    }
+    80%{
+        right: 10%;
+        top: 10%;
+    }
+    100%{
+        right: 0;
+        transform: rotateY(180deg);
+    }
+}
+/* Bilen som kjører */
+.carPic{
+    position: absolute;
+    bottom: 1%;
+    width: 20%;
+    right: 0%;
+    z-index: 9999;
+}
+@keyframes carDriving{
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.carPic{
+    animation-name: carDriving;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/* Huset med en mann som vinker med hover effekt */
+.housePic{
+    position: absolute;
+    width: 29%;
+    bottom: 7%;
+    left: 33%;
+}
+.wavingManPic{
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    opacity: 0;
+    bottom: 8.5%;
+    left: 36%;
+}
+.wavingManPic:hover{
+    opacity: 100;
+}
+/* Alle legoklossene og hvordan deres animasjon skal kjøre */
+.redBrick{
+    position: absolute;
+    width: 16%;
+    bottom: 48.5%;
+    left: 6%;
+    z-index: 999999;
+    opacity: 0;
+}
+.redBrick{
+    animation-name: buildRedBrick;
+    animation-duration: 10s;
+    animation-delay: 14s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.orangeBrick{
+    position: absolute;
+    width: 16%;
+    bottom: 40%;
+    left: 6%;
+    z-index: 99999;
+    opacity: 0;
+}
+.orangeBrick{
+    animation-name: buildOrangeBrick;
+    animation-duration: 10s;
+    animation-delay: 12s;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-iteration-count: inherit;
+}
+.blueBrick{
+    position: absolute;
+    width: 16%;
+    bottom: 30%;
+    left: 6%;
+    z-index: 9999;
+    opacity: 0;
+}
+.blueBrick{
+    animation-name: buildBlueBrick;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+.greenBrick{
+    position: absolute;
+    width: 16%;
+    bottom: 21%;
+    left: 6%;
+    z-index: 999;
+    opacity: 0;
+}
+.greenBrick{
+    animation-name: buildGreenBrick;
+    animation-duration: 10s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+/* Animasjonene til legoklossene */
+@keyframes buildGreenBrick{
+    0%{
+        opacity: 100;
+        bottom: 300%;
+    }
+    20%{
+        opacity: 100;
+        bottom: 200%;
+    }
+    40%{
+        bottom: 100%;
+    }
+    50%{
+        opacity: 100;
+        bottom: 80%;
+    }
+    100%{
+        bottom: 21.4%;
+        opacity: 100;
+    }
+}
+@keyframes buildBlueBrick{
+    0%{
+        opacity: 100;
+        bottom: 300%;
+    }
+    20%{
+        opacity: 100;
+        bottom: 200%;
+    }
+    40%{
+        bottom: 100%;
+    }
+    50%{
+        opacity: 100;
+        bottom: 80%;
+    }
+    100%{
+        bottom: 30%;
+        opacity: 100;
+    }
+}
+@keyframes buildOrangeBrick{
+    0%{
+        opacity: 100;
+        bottom: 300%;
+    }
+    20%{
+        opacity: 100;
+        bottom: 200%;
+    }
+    40%{
+        bottom: 100%;
+    }
+    50%{
+        opacity: 100;
+        bottom: 80%;
+    }
+    100%{
+        bottom: 40%;
+        opacity: 100;
+    }
+}
+@keyframes buildRedBrick{
+    0%{
+        opacity: 100;
+        bottom: 300%;
+    }
+    20%{
+        opacity: 100;
+        bottom: 200%;
+    }
+    40%{
+        bottom: 100%;
+    }
+    50%{
+        opacity: 100;
+        bottom: 80%;
+    }
+    100%{
+        bottom: 48.5%;
+        opacity: 100;
+    }
+}
+/*Under er båten sin animasjon, sånn at den skal kjøre over skjermen
+Under finner man også båten sin plassering og størrelse 
+og hvordan animasjonen skal kjøre.*/
+.movingboat{
+    position: absolute;
+    bottom: -3%;
+    width: 40%;
+    right: 10%;
+    z-index: 9999;
+}
+@keyframes boatDriving{
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.movingboat{
+    animation-name: boatDriving;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/*Ubåten sin plassering og størrelse*/
+.submarine{
+    animation: MoveUpDown 10s ease-in-out infinite;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    width: 50%;
+}
+/*Ubåten sin animasjon, som skal bevge seg opp og ned
+og hvordan animasjonen skal kjøre*/
+.submarine{
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+}
+@keyframes mover {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-20px);}
+}
+@keyframes mover {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-20px);}
+} 
+/*Haien sin plassering og størrelse*/
+.shark{
+    position: absolute;
+    display: flex;
+    z-index: 999999;
+    width: 17%;
+    right: 15%;
+    top: 15%;
+}
+/*Haien sin animasjon, den skal bevge seg rundt på skjermen
+samt hvordan animasjonen skal kjøre*/
+.shark{
+    animation-name: swimmingShark;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes swimmingShark{
+    0%{
+        right: 0%;
+     }
+    25%{
+        right: 15%;
+        top: 5%;
+    }
+    45%{
+        right: 30%;
+        top: 50%;
+    }
+    60%{
+        transform: scaleX(180deg);
+    }
+    75%{
+        right: 50%;
+        top: 45%;
+    }
+    95%{
+        right: 60%;
+        top: 30%;
+    }
+    100%{
+        right: 0%;
+        transform: rotateY(180deg);
+    }
+}
+/*Under er de ulike fiskene sin størrelse og plassering,
+samt hvordan animasjoen skal kjøre*/
+.fish1{
+    position: absolute;
+    bottom: 80%;
+    width: 8%;
+    right: 70%;
+    animation-name: swimmingFish;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.fish2{
+    position: absolute;
+    bottom: 75%;
+    width: 8%;
+    right: 75%;
+    animation-name: swimmingFish2;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.fish3{
+    position: absolute;
+    bottom: 65%;
+    width: 8%;
+    right: 85%;
+    animation-name: swimmingFish3;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/* Under er animasjonen for at fiksene skal bevege seg fram og tilbake i en gruppe */
+@keyframes swimmingFish{
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 15%;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 0%;
+        transform: scaleX(180deg);
+    }
+}
+@keyframes swimmingFish2{
+    0%{
+        left: 5%;
+    }
+    50%{
+        left: 20%;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 5%;
+        transform: scaleX(180deg);
+    }
+}
+@keyframes swimmingFish3{
+    0%{
+        left: -2%;
+    }
+    50%{
+        left: 13%;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: -2%;
+        transform: scaleX(180deg);
+    }
+}

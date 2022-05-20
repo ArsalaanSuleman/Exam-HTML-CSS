@@ -1,0 +1,336 @@
+/*Kodet av Henrik og Arsalaan*/
+/* Primært har Henrik jobbet med de to øverste segementene (top bilde og brannstasjonen), og Arsalaan har jobbet med de to nederste
+(politi og racing), men vi har også samarbeidet en del sammen for å løse det på best mulig måte. */
+
+body, html{
+    background-color: #ffcd03;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Top bilde*/
+
+header {
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+
+.topImg {
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxContainer {
+    position: absolute;
+    bottom: 40%;
+    left: 15%;   
+    width: 30%;
+    height: 200px;
+    background-color: #374343;
+    color: white;
+    border-radius: 10px;
+    box-shadow: black 6px 5px 25px 2px;
+}
+
+.boxHeader, .utforskByenBtn {
+    margin-left: 3%;
+}
+
+.boxHeader {
+    font-size: 40px;
+}
+
+.utforskByenBtn {
+    margin-top: 5%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FF3636;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.utforskByenBtn:hover {
+    background-color: #b40606;
+    transition: 0.5s;
+}
+
+
+.brannContainer, .politiContainer, .racingContainer{
+    position: relative;
+    top: 5vh;
+}
+
+/*Lego City Brannstasjon*/
+.containerBrannstasjon{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.containerB {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width:100vw;
+}
+
+#bgB{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tekstBrannstasjon{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #e9ebed;
+    font-size: 80px;
+    margin: 0;
+    width: 450px;
+
+}
+
+.tekstBrannstasjon p {
+    width: 450px;
+    margin: 0;
+}
+
+.tekstBrannstasjon1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #e9ebed;
+    width: 450px;
+    font-size: 80px;
+}
+
+.tekstbrannstasjon1 p {
+    width: 450px;
+    margin: 0;
+}
+
+
+.flexImgBrann{
+    position: absolute;
+    top: 0;
+    height: 25vh;
+    width: 20vw;
+    left: 0%;
+    padding: 6%;
+    
+}
+
+.brannBil, .brannHelikopter, .brannFly{
+    width: 100%;
+    
+    
+}
+
+.brannbilTekst{   
+    position: absolute;
+    top: 16%;
+    color: #e9ebed;
+    left: 30%;
+    font-size: 19px;
+    width: 280px;
+}
+
+
+
+.brannhelikopterTekst{
+    position: absolute;
+    top: 39%;
+    color: #e9ebed;
+    left: 30%;
+    bottom: 18rem;
+    font-size: 19px;
+    width: 280px;
+}
+
+
+.brannflyTekst{
+    position: absolute;
+    top: 65%;
+    color: #e9ebed;
+    left: 30%;
+    font-size: 19px;
+    width: 280px;
+
+}
+
+/* Lego City Politi */
+
+
+.containerPoliti, .containerRacing {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.containerP {
+    position: relative;
+    height: 100vh;
+    
+    
+}
+
+#bgP{
+    position: absolute;
+    top: 5vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tekst1{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #e9ebed;
+    font-size: 100px;
+    
+}
+
+.tekst2{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: #e9ebed;
+    font-size: 100px;
+    width: 20px;
+    
+}
+
+.politibilTekst{
+    color: #e9ebed;
+    font-size: 19px;
+    width: 320px;
+    margin-bottom: 80px;
+    
+}
+
+.helikopterTekst{
+    color: #e9ebed;
+    font-size: 19px;
+    margin-bottom: 130px;
+}
+
+.båtTekst{
+    color: #e9ebed;
+    font-size: 19px;
+    
+}
+
+.flexImg{
+    position: absolute;
+    right: 0%;
+    top: 22%;
+    height: 80vh;
+    width: 25vw;
+}
+
+.flexTxt{
+    position: absolute;
+    top: 30%;
+    right: 30%;   
+    width: 20vw;
+    height: 71vh;
+}
+
+.politiBil, .politiHelikopter, .politiBåt{
+    width: 80%
+}
+
+/*Lego city racing*/
+
+
+.containerR {
+    position: relative;
+    top: 5vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bgR{
+    position: absolute;
+    top: 5vh;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.tekstRacing{
+    position: absolute;
+    top: 15%;
+    right: 11%;
+    color: #e9ebed;
+    font-size: 80px;
+}
+
+.tekstRacing p {
+    margin: 0;
+}
+
+.tekstRacing1{
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    color: #e9ebed;
+    font-size: 80px;
+   
+}
+
+.tekstRacing1 p {
+    margin: auto;
+}
+
+.flexImgRacing{
+    position: absolute;
+    height: 25vh;
+    width: 18vw;
+    left: 5%;
+    top: 20%;
+
+}
+
+.flexTxtRacing {
+    position: absolute;
+    top: 26%;
+    left: 30%;   
+    width: 20vw;
+    height: 70vh;
+}
+
+.gulbil, .ferrari{
+    width: 120%;
+
+}
+
+.gulbilTekst, .ferrariTekst{
+    color: #e9ebed;
+    font-size: 19px;
+    width: 310px;
+    margin-bottom: 60px;
+}
+
+
+.rally{
+    width: 130%
+
+}
+
+.rallyTekst{
+    color: #e9ebed;
+    font-size: 19px;
+    width: 310px;
+
+}
